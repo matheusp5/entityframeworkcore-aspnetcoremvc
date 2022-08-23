@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Formulário";
+}
+
+<form method="post" asp-action="Formulario" asp-controller="Home">
+    <input type="text" name="nome" placeholder="Nome" />
+    <input type="email" name="email" placeholder="Email" />
+    <input type="submit" value="Enviar" />
+</form>
+
+@ViewData["result"]
